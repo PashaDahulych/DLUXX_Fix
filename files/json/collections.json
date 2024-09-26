@@ -1,0 +1,155 @@
+{
+	"collections": [
+		{
+			"id": 1,
+			"address": "Palm Jumeirah, Dubai",
+			"title": "Anantara South",
+			"image": "img/project-gallery/image_01.jpg",
+			"area": "240m²",
+			"category": "residential",
+			"url": "https://google.com",
+			"alt": "background image"
+		},
+		{
+			"id": 2,
+			"address": "Palm Jumeirah , Dubai",
+			"title": "Shoreline 1",
+			"image": "img/project-gallery/image_02.jpg",
+			"area": "136m²",
+			"category": "commercial",
+			"url": "https://google.com",
+			"alt": "background image"
+		},
+		{
+			"id": 3,
+			"address": "Marina Dubai , Dubai",
+			"title": "Marina Plaza",
+			"image": "img/project-gallery/image_03.jpg",
+			"area": "290m²",
+			"category": "commercial",
+			"url": "https://google.com",
+			"alt": "background image"
+		},
+		{
+			"id": 4,
+			"address": "Downtown , Dubai",
+			"title": "Act One Tower",
+			"image": "img/project-gallery/image_04.jpg",
+			"area": "207m²",
+			"category": "commercial",
+			"url": "https://google.com",
+			"alt": "background image"
+		},
+		{
+			"id": 5,
+			"address": "Jumeirah Golf Estate, Dubai",
+			"title": "Jumeirah Golf Estate",
+			"image": "img/project-gallery/image_05.jpg",
+			"area": "304m²",
+			"category": "commercial",
+			"url": "https://google.com",
+			"alt": "background image"
+		},
+		{
+			"id": 6,
+			"address": "EMAAR Business Park, Dubai",
+			"title": "ONYX 1",
+			"image": "img/project-gallery/image_06.jpg",
+			"area": "190m²",
+			"category": "commercial",
+			"url": "https://google.com",
+			"alt": "background image"
+		},
+		{
+			"id": 7,
+			"address": "Palm Jumeirah, Dubai",
+			"title": "Emerald",
+			"image": "img/project-gallery/image_07.jpg",
+			"area": "240m²",
+			"category": "commercial",
+			"url": "https://google.com",
+			"alt": "background image"
+		},
+		{
+			"id": 8,
+			"address": "Palm Jumeirah , Dubai",
+			"title": "District 1",
+			"image": "img/project-gallery/image_08.jpg",
+			"area": "140m²",
+			"category": "commercial",
+			"url": "https://google.com",
+			"alt": "background image"
+		},
+		{
+			"id": 9,
+			"address": "Marina Dubai , Dubai",
+			"title": "Marina Plaza",
+			"image": "img/project-gallery/image_09.jpg",
+			"area": "290m²",
+			"category": "commercial",
+			"url": "https://google.com",
+			"alt": "background image"
+		},
+		{
+			"id": 10,
+			"address": "Palm Jumeirah, Dubai",
+			"title": "Anantara South",
+			"image": "img/project-gallery/image_01.jpg",
+			"area": "240m²",
+			"category": "residential",
+			"url": "https://google.com",
+			"alt": "background image"
+		},
+		{
+			"id": 11,
+			"address": "Palm Jumeirah , Dubai",
+			"title": "Shoreline 1",
+			"image": "img/project-gallery/image_02.jpg",
+			"area": "136m²",
+			"category": "commercial",
+			"url": "https://google.com",
+			"alt": "background image"
+		}
+		,
+		{
+			"id": 8,
+			"address": "Palm Jumeirah , Dubai",
+			"title": "District 1",
+			"image": "img/project-gallery/image_08.jpg",
+			"area": "140m²",
+			"category": "commercial",
+			"url": "https://google.com",
+			"alt": "background image"
+		},
+		{
+			"id": 9,
+			"address": "Marina Dubai , Dubai",
+			"title": "Marina Plaza",
+			"image": "img/project-gallery/image_09.jpg",
+			"area": "290m²",
+			"category": "commercial",
+			"url": "https://google.com",
+			"alt": "background image"
+		},
+		{
+			"id": 10,
+			"address": "Palm Jumeirah, Dubai",
+			"title": "Anantara South",
+			"image": "img/project-gallery/image_01.jpg",
+			"area": "240m²",
+			"category": "residential",
+			"url": "https://google.com",
+			"alt": "background image"
+		},
+		{
+			"id": 11,
+			"address": "Palm Jumeirah , Dubai",
+			"title": "Shoreline 1",
+			"image": "img/project-gallery/image_02.jpg",
+			"area": "136m²",
+			"category": "commercial",
+			"url": "https://google.com",
+			"alt": "background image"
+		}
+	]
+}
