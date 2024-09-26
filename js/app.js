@@ -895,10 +895,9 @@
             }
         }));
     }
-    window.addEventListener("load", (() => {
+    window.addEventListener("DOMContentLoaded", (() => {
         script_formValidate();
         const itemElement = document.getElementById("all");
-        console.log(itemElement);
         if (itemElement) loadProducts();
     }));
     let itemToShow = 9;
@@ -924,23 +923,6 @@
             if (events) for (const eventType in events) el.addEventListener(eventType, events[eventType]);
             return el;
         }
-    }
-    function setDelay(arr) {
-        if (arr.length) arr.forEach(((el, index) => {
-            el.style.transform = "translateY(-20%)";
-            el.style.opacity = "0";
-            requestAnimationFrame((() => {
-                const galleryBody = el.closest(".portfolio-gallery__body");
-                if (galleryBody && galleryBody.classList.contains("_watcher-view")) setTimeout((() => {
-                    el.style.transform = "translateY(0%)";
-                    el.style.transitionProperty = "all";
-                    el.style.transitionDuration = "0.3s";
-                    el.style.transitionDelay = `${.1 * index}s`;
-                    el.style.transitionTimingFunction = "ease";
-                    el.style.opacity = "1";
-                }), 0);
-            }));
-        }));
     }
     function setItem(data) {
         if (data.collections) copyCardArray = JSON.parse(JSON.stringify(data.collections)); else copyCardArray = data;
@@ -996,7 +978,6 @@
             document.getElementById("all").append(li);
             newLiAddedItem.push(li);
         }
-        setDelay(newLiAddedItem);
         currentIndex += itemToShow;
         if (currentIndex >= copyCardArray.length) document.getElementById("showmore").style.display = "none";
     }

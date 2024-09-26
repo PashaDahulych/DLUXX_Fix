@@ -982,15 +982,365 @@ body::after {
 .portfolio-gallery__list li {
   position: relative;
   opacity: 0;
-  -webkit-transform: scale(0);
-  transform: scale(0);
   -webkit-transform: translateY(-20%);
   transform: translateY(-20%);
   transition: opacity .3s ease,-webkit-transform .3s ease;
   transition: opacity .3s ease,transform .3s ease;
   transition: opacity .3s ease,transform .3s ease,-webkit-transform .3s ease
 }
-._watcher-view .portfolio-gallery__list li {
+._watcher-view .portfolio-gallery__list li:nth-child(1) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 0s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(2) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease .2s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(3) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease .4s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(4) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease .6s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(5) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease .8s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(6) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 1s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(7) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 1.2s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(8) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 1.4s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(9) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 1.6s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(10) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 1.8s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(11) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 2s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(12) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 2.2s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(13) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 2.4s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(14) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 2.6s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(15) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 2.8s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(16) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 3s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(17) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 3.2s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(18) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 3.4s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(19) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 3.6s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(20) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 3.8s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(21) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 4s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(22) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 4.2s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(23) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 4.4s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(24) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 4.6s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(25) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 4.8s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(26) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 5s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(27) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 5.2s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(28) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 5.4s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(29) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 5.6s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(30) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 5.8s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(31) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 6s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(32) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 6.2s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(33) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 6.4s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(34) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 6.6s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(35) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 6.8s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(36) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 7s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(37) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 7.2s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(38) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 7.4s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(39) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 7.6s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(40) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 7.8s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(41) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 8s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(42) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 8.2s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(43) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 8.4s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(44) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 8.6s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(45) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 8.8s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(46) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 9s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(47) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 9.2s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(48) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 9.4s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(49) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 9.6s;
+  will-change: transform
+}
+._watcher-view .portfolio-gallery__list li:nth-child(50) {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all .3s ease 9.8s;
+  will-change: transform
+}
+.portfolio-gallery__list li.animate-card {
+  border: 2px solid red;
+  transition: all .3s ease;
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0)
@@ -1060,6 +1410,11 @@ body::after {
   position: relative;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%)
+}
+._watcher-view .portfolio-gallery__body:not([hidden]) li {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0)
 }
 #loader {
   position: absolute;
@@ -1360,11 +1715,11 @@ body::after {
   .about__down-list {
     padding-right: 4.4375rem
   }
-  .portfolio:not(:last-child) {
-    margin-bottom: 5rem
-  }
   .portfolio__text {
     font-size: 3rem
+  }
+  .portfolio-gallery {
+    padding-top: 5rem
   }
   .gallery {
     padding-bottom: 7.125rem
@@ -2212,8 +2567,8 @@ body::after {
   .about__list:not(:last-child) {
     margin-bottom: 2.625rem
   }
-  .portfolio:not(:last-child) {
-    margin-bottom: 2.5rem
+  .portfolio-gallery {
+    padding-top: 2.5rem
   }
   .project__list .project__item:not(:first-of-type) {
     -webkit-column-gap: 1rem;
@@ -2371,14 +2726,14 @@ body::after {
       margin-bottom: calc(2.625rem + 3.5*(100vw - 61.99875rem)/ 25.50125)
     }
   }
-  @supports (margin-bottom:clamp(2.5rem ,-3.5780108818rem + 9.8034410078vw ,5rem)) {
-    .portfolio:not(:last-child) {
-      margin-bottom: clamp(2.5rem ,-3.5780108818rem + 9.8034410078vw ,5rem)
+  @supports (padding-top:clamp(2.5rem ,-3.5780108818rem + 9.8034410078vw ,5rem)) {
+    .portfolio-gallery {
+      padding-top: clamp(2.5rem ,-3.5780108818rem + 9.8034410078vw ,5rem)
     }
   }
-  @supports not (margin-bottom:clamp(2.5rem ,-3.5780108818rem + 9.8034410078vw ,5rem)) {
-    .portfolio:not(:last-child) {
-      margin-bottom: calc(2.5rem + 2.5*(100vw - 61.99875rem)/ 25.50125)
+  @supports not (padding-top:clamp(2.5rem ,-3.5780108818rem + 9.8034410078vw ,5rem)) {
+    .portfolio-gallery {
+      padding-top: calc(2.5rem + 2.5*(100vw - 61.99875rem)/ 25.50125)
     }
   }
   @supports ((-moz-column-gap:clamp(1rem ,-1.4312043527rem + 3.9213764031vw ,2rem)) or (column-gap:clamp(1rem ,-1.4312043527rem + 3.9213764031vw ,2rem))) {
