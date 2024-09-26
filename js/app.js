@@ -626,7 +626,6 @@
             return configWatcher;
         }
         scrollWatcherCreate(configWatcher) {
-            console.log(configWatcher);
             this.observer = new IntersectionObserver(((entries, observer) => {
                 entries.forEach((entry => {
                     this.scrollWatcherCallback(entry, observer);
@@ -897,24 +896,9 @@
     }
     window.addEventListener("DOMContentLoaded", (() => {
         script_formValidate();
-        const itemElement = document.getElementById("all");
-        if (itemElement) loadProducts();
+        const allItem = document.querySelector(".portfolio-gallery__tabs");
+        if (allItem) loadProducts();
     }));
-    let itemToShow = 9;
-    let currentIndex = 0;
-    let copyCardArray = [];
-    async function loadProducts() {
-        try {
-            console.log("Function is ok");
-            const URL = "files/json/collections.json";
-            const response = await fetch(URL);
-            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-            const data = await response.json();
-            setItem(data);
-        } catch (error) {
-            console.error("Fetch error:", error);
-        }
-    }
     class ElementsCreator {
         static createHTMLElement({tag, attrs, props, events}) {
             const el = document.createElement(tag);
@@ -924,10 +908,54 @@
             return el;
         }
     }
-    function setItem(data) {
-        if (data.collections) copyCardArray = JSON.parse(JSON.stringify(data.collections)); else copyCardArray = data;
+    let itemToShow = 9;
+    let currentIndex = 0;
+    let copyCardArray = [];
+    async function loadProducts() {
+        try {
+            const URL = "files/json/collections.json";
+            const response = await fetch(URL);
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            const data = await response.json();
+            setItem(data.collections, "all");
+            filterAndRender(data);
+            const showMoreBtnAll = document.getElementById("showmore-all");
+            showMoreBtnAll.addEventListener("click", (() => {
+                itemToShow = 3;
+                setItem(data.collections, "all");
+            }));
+        } catch (error) {
+            console.error("Fetch error:", error);
+        }
+    }
+    function filterAndRender(data) {
+        document.querySelector(".portfolio-gallery__navigation").addEventListener("click", (e => {
+            if (e.target.tagName !== "BUTTON") return false;
+            let filterClass = e.target.dataset["f"];
+            console.log(filterClass);
+            currentIndex = 0;
+            let filterItems = [];
+            if (filterClass === "all") filterItems = data.collections; else filterItems = data.collections.filter((item => item.category === filterClass));
+            const list = document.getElementById(filterClass);
+            list.innerHTML = "";
+            console.log(filterItems);
+            setItem(filterItems, filterClass);
+            const showMoreBtn = document.getElementById(`showmore-${filterClass}`);
+            if (filterItems.length <= 9) showMoreBtn.style.display = "none"; else showMoreBtn.style.display = "block";
+            showMoreBtn.addEventListener("click", (() => {
+                itemToShow = 3;
+                setItem(filterItems, filterClass);
+            }));
+        }));
+    }
+    function setItem(data, listId) {
+        if (!Array.isArray(data)) copyCardArray = JSON.parse(JSON.stringify(data.collections)); else copyCardArray = data;
         const nextCards = copyCardArray.slice(currentIndex, currentIndex + itemToShow);
-        const newLiAddedItem = [];
+        const list = document.getElementById(listId);
+        if (!list) {
+            console.error(`List with id '${listId}' not found!`);
+            return;
+        }
         for (const el of nextCards) {
             const li = ElementsCreator.createHTMLElement({
                 tag: "li"
@@ -972,19 +1000,21 @@
                     innerText: el.area
                 }
             });
+            const cat = ElementsCreator.createHTMLElement({
+                tag: "p",
+                props: {
+                    innerText: el.category
+                }
+            });
             li.append(a);
             a.append(img, info);
-            info.append(address, title, p);
-            document.getElementById("all").append(li);
-            newLiAddedItem.push(li);
+            info.append(address, title, p, cat);
+            list.append(li);
         }
         currentIndex += itemToShow;
-        if (currentIndex >= copyCardArray.length) document.getElementById("showmore").style.display = "none";
+        const showMoreBtn = document.getElementById(`showmore-${listId}`);
+        if (currentIndex >= copyCardArray.length) showMoreBtn.style.display = "none"; else showMoreBtn.style.display = "block";
     }
-    document.getElementById("showmore").addEventListener("click", (() => {
-        itemToShow = 3;
-        setItem(copyCardArray);
-    }));
     window["FLS"] = false;
     isWebp();
     menuInit();
