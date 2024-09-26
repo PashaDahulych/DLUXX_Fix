@@ -867,7 +867,7 @@
         const emailInp = document.getElementById("email");
         const phoneInp = document.getElementById("phone");
         const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-        const dubaiPhoneNumberPattern = /^(\+971|971|0)?(4|5[0-9])\d{7}$/;
+        const phoneNumberPattern = /^\+?[0-9]+$/;
         callForm.addEventListener("submit", (e => {
             e.preventDefault();
         }));
@@ -883,22 +883,128 @@
             }
         }));
         phoneInp.addEventListener("change", (() => {
-            const phoneValue = phoneInp.value.replace(/\s+/g, "");
+            const phoneValue = phoneInp.value;
             if (phoneValue === "") return phoneInp.classList.remove("error");
-            if (!phoneValue.match(dubaiPhoneNumberPattern)) {
+            if (!phoneValue.match(phoneNumberPattern)) {
                 phoneInp.classList.remove("ok");
                 return phoneInp.classList.add("error");
             }
-            if (phoneValue.match(dubaiPhoneNumberPattern)) {
+            if (phoneValue.match(phoneNumberPattern)) {
                 phoneInp.classList.remove("error");
                 return phoneInp.classList.add("ok");
             }
         }));
     }
-    window.onload = function() {
+    window.addEventListener("load", (() => {
         script_formValidate();
-    };
-    window["FLS"] = true;
+        const itemElement = document.getElementById("all");
+        console.log(itemElement);
+        if (itemElement) loadProducts();
+    }));
+    let itemToShow = 9;
+    let currentIndex = 0;
+    let copyCardArray = [];
+    async function loadProducts() {
+        try {
+            console.log("Function is ok");
+            const URL = "files/json/collections.json";
+            const response = await fetch(URL);
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            const data = await response.json();
+            setItem(data);
+        } catch (error) {
+            console.error("Fetch error:", error);
+        }
+    }
+    class ElementsCreator {
+        static createHTMLElement({tag, attrs, props, events}) {
+            const el = document.createElement(tag);
+            if (attrs) for (const attrKey in attrs) el.setAttribute(attrKey, attrs[attrKey]);
+            if (props) for (const propKey in props) el[propKey] = props[propKey];
+            if (events) for (const eventType in events) el.addEventListener(eventType, events[eventType]);
+            return el;
+        }
+    }
+    function setDelay(arr) {
+        if (arr.length) arr.forEach(((el, index) => {
+            el.style.transform = "translateY(-20%)";
+            el.style.opacity = "0";
+            requestAnimationFrame((() => {
+                const galleryBody = el.closest(".portfolio-gallery__body");
+                if (galleryBody && galleryBody.classList.contains("_watcher-view")) setTimeout((() => {
+                    el.style.transform = "translateY(0%)";
+                    el.style.transitionProperty = "all";
+                    el.style.transitionDuration = "0.3s";
+                    el.style.transitionDelay = `${.1 * index}s`;
+                    el.style.transitionTimingFunction = "ease";
+                    el.style.opacity = "1";
+                }), 0);
+            }));
+        }));
+    }
+    function setItem(data) {
+        if (data.collections) copyCardArray = JSON.parse(JSON.stringify(data.collections)); else copyCardArray = data;
+        const nextCards = copyCardArray.slice(currentIndex, currentIndex + itemToShow);
+        const newLiAddedItem = [];
+        for (const el of nextCards) {
+            const li = ElementsCreator.createHTMLElement({
+                tag: "li"
+            });
+            const a = ElementsCreator.createHTMLElement({
+                tag: "a",
+                attrs: {
+                    href: el.url
+                },
+                props: {
+                    classList: "portfolio-gallery__card"
+                }
+            });
+            const img = ElementsCreator.createHTMLElement({
+                tag: "img",
+                attrs: {
+                    src: el.image,
+                    alt: el.alt
+                }
+            });
+            const info = ElementsCreator.createHTMLElement({
+                tag: "div",
+                props: {
+                    classList: "portfolio-gallery__info"
+                }
+            });
+            const address = ElementsCreator.createHTMLElement({
+                tag: "address",
+                props: {
+                    innerText: el.address
+                }
+            });
+            const title = ElementsCreator.createHTMLElement({
+                tag: "h3",
+                props: {
+                    innerText: el.title
+                }
+            });
+            const p = ElementsCreator.createHTMLElement({
+                tag: "p",
+                props: {
+                    innerText: el.area
+                }
+            });
+            li.append(a);
+            a.append(img, info);
+            info.append(address, title, p);
+            document.getElementById("all").append(li);
+            newLiAddedItem.push(li);
+        }
+        setDelay(newLiAddedItem);
+        currentIndex += itemToShow;
+        if (currentIndex >= copyCardArray.length) document.getElementById("showmore").style.display = "none";
+    }
+    document.getElementById("showmore").addEventListener("click", (() => {
+        itemToShow = 3;
+        setItem(copyCardArray);
+    }));
+    window["FLS"] = false;
     isWebp();
     menuInit();
     tabs();

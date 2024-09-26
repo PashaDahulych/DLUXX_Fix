@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240924112354">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240926094353">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,10 +51,10 @@
 					<nav class="menu__body">
 						<ul class="menu__list">
 							<li class="menu__item">
-								<a href="#" class="menu__link">Services</a>
+								<a href="#" data-goto-header data-goto=".portfolio-gallery" class="menu__link">Services</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" class="menu__link">Projects</a>
+								<a href="#" data-goto-header data-goto=".portfolio-gallery" class="menu__link">Projects</a>
 							</li>
 							<li class="menu__item">
 								<a href="tel:+971588180252" class="menu__number">+971 58 818 0252</a>
@@ -254,7 +254,7 @@
 				<h2 class="hidden">Portfolio gallery</h2>
 				<div data-tabs data-tabs-animate="1000" class="portfolio-gallery__tabs">
 					<nav data-tabs-titles class="portfolio-gallery__navigation">
-						<button type="button" class="portfolio-gallery__title">
+						<button type="button" class="portfolio-gallery__title" id="residential">
 							Residential
 						</button>
 						<button type="button" class="portfolio-gallery__title">
@@ -276,473 +276,47 @@
 							all
 						</button>
 					</nav>
+
 					<div data-tabs-body class="portfolio-gallery__content">
-						<div data-watch class="portfolio-gallery__body">
-							<ul class="portfolio-gallery__list">
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_01.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Palm Jumeirah, Dubai
-											</address>
-											<h3>Anantara South</h3>
-											<p>240m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_02.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Palm Jumeirah , Dubai
-											</address>
-											<h3>Shoreline 1</h3>
-											<p>136m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_03.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Marina Dubai , Dubai
-											</address>
-											<h3>Marina Plaza</h3>
-											<p>290m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_04.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Downtown , Dubai
-											</address>
-											<h3>Act One Tower</h3>
-											<p>207m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_05.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Jumeirah Golf Estate, Dubai
-											</address>
-											<h3>Jumeirah Golf Estate</h3>
-											<p>304m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_06.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												EMAAR Business Park, Dubai
-											</address>
-											<h3>ONYX</h3>
-											<p>190m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_07.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Palm Jumeirah, Dubai
-											</address>
-											<h3>Emerald</h3>
-											<p>240m²</p>
-										</div>
-									</a>
-								</li>
-							</ul>
+						<div data-watch data-watch-once class="portfolio-gallery__body">
+							<ul class="portfolio-gallery__list"></ul>
 							<button type="button" class="portfolio-gallery__btn btn">
 								view more
 							</button>
 						</div>
-						<div data-watch class="portfolio-gallery__body">
-							<ul class="portfolio-gallery__list">
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_04.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Downtown , Dubai
-											</address>
-											<h3>Act One Tower</h3>
-											<p>207m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_05.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Jumeirah Golf Estate, Dubai
-											</address>
-											<h3>Jumeirah Golf Estate</h3>
-											<p>304m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_06.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												EMAAR Business Park, Dubai
-											</address>
-											<h3>ONYX</h3>
-											<p>190m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_07.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Palm Jumeirah, Dubai
-											</address>
-											<h3>Emerald</h3>
-											<p>240m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_08.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Palm Jumeirah , Dubai
-											</address>
-											<h3>District 1</h3>
-											<p>140m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_09.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Marina Dubai , Dubai
-											</address>
-											<h3>Marina Plaza</h3>
-											<p>290m²</p>
-										</div>
-									</a>
-								</li>
-							</ul>
+						<div data-watch data-watch-once class="portfolio-gallery__body">
+							<ul class="portfolio-gallery__list"></ul>
 							<button type="button" class="portfolio-gallery__btn btn">
 								view more
 							</button>
 						</div>
-						<div data-watch class="portfolio-gallery__body">
-							<ul class="portfolio-gallery__list">
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_01.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Palm Jumeirah, Dubai
-											</address>
-											<h3>Anantara South</h3>
-											<p>240m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_02.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Palm Jumeirah , Dubai
-											</address>
-											<h3>Shoreline 1</h3>
-											<p>136m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_03.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Marina Dubai , Dubai
-											</address>
-											<h3>Marina Plaza</h3>
-											<p>290m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_04.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Downtown , Dubai
-											</address>
-											<h3>Act One Tower</h3>
-											<p>207m²</p>
-										</div>
-									</a>
-								</li>
-							</ul>
+						<div data-watch data-watch-once class="portfolio-gallery__body">
+							<ul class="portfolio-gallery__list"></ul>
 							<button type="button" class="portfolio-gallery__btn btn">
 								view more
 							</button>
 						</div>
-						<div data-watch class="portfolio-gallery__body">
-							<ul class="portfolio-gallery__list">
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_09.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Marina Dubai , Dubai
-											</address>
-											<h3>Marina Plaza</h3>
-											<p>290m²</p>
-										</div>
-									</a>
-								</li>
-							</ul>
+						<div data-watch data-watch-once class="portfolio-gallery__body">
+							<ul class="portfolio-gallery__list"></ul>
 							<button type="button" class="portfolio-gallery__btn btn">
 								view more
 							</button>
 						</div>
-						<div data-watch class="portfolio-gallery__body">
-							<ul class="portfolio-gallery__list">
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_01.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Palm Jumeirah, Dubai
-											</address>
-											<h3>Anantara South</h3>
-											<p>240m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_06.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												EMAAR Business Park, Dubai
-											</address>
-											<h3>ONYX</h3>
-											<p>190m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_07.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Palm Jumeirah, Dubai
-											</address>
-											<h3>Emerald</h3>
-											<p>240m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_08.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Palm Jumeirah , Dubai
-											</address>
-											<h3>District 1</h3>
-											<p>140m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_09.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Marina Dubai , Dubai
-											</address>
-											<h3>Marina Plaza</h3>
-											<p>290m²</p>
-										</div>
-									</a>
-								</li>
-							</ul>
+						<div data-watch data-watch-once class="portfolio-gallery__body">
+							<ul class="portfolio-gallery__list"></ul>
 							<button type="button" class="portfolio-gallery__btn btn">
 								view more
 							</button>
 						</div>
-						<div data-watch class="portfolio-gallery__body">
-							<ul class="portfolio-gallery__list">
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_07.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Palm Jumeirah, Dubai
-											</address>
-											<h3>Emerald</h3>
-											<p>240m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_08.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Palm Jumeirah , Dubai
-											</address>
-											<h3>District 1</h3>
-											<p>140m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_09.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Marina Dubai , Dubai
-											</address>
-											<h3>Marina Plaza</h3>
-											<p>290m²</p>
-										</div>
-									</a>
-								</li>
-							</ul>
+						<div data-watch data-watch-once class="portfolio-gallery__body">
+							<ul class="portfolio-gallery__list"></ul>
 							<button type="button" class="portfolio-gallery__btn btn">
 								view more
 							</button>
 						</div>
-						<div data-watch class="portfolio-gallery__body">
-							<ul class="portfolio-gallery__list">
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_01.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Palm Jumeirah, Dubai
-											</address>
-											<h3>Anantara South</h3>
-											<p>240m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_02.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Palm Jumeirah , Dubai
-											</address>
-											<h3>Shoreline 1</h3>
-											<p>136m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_03.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Marina Dubai , Dubai
-											</address>
-											<h3>Marina Plaza</h3>
-											<p>290m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_04.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Downtown , Dubai
-											</address>
-											<h3>Act One Tower</h3>
-											<p>207m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_05.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Jumeirah Golf Estate, Dubai
-											</address>
-											<h3>Jumeirah Golf Estate</h3>
-											<p>304m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_06.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												EMAAR Business Park, Dubai
-											</address>
-											<h3>ONYX</h3>
-											<p>190m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_07.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Palm Jumeirah, Dubai
-											</address>
-											<h3>Emerald</h3>
-											<p>240m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_08.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Palm Jumeirah , Dubai
-											</address>
-											<h3>District 1</h3>
-											<p>140m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_09.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Marina Dubai , Dubai
-											</address>
-											<h3>Marina Plaza</h3>
-											<p>290m²</p>
-										</div>
-									</a>
-								</li>
-							</ul>
-							<button type="button" class="portfolio-gallery__btn btn">
+						<div data-watch data-watch-once class="portfolio-gallery__body">
+							<ul id="all" class="portfolio-gallery__list"></ul>
+							<button type="button" class="portfolio-gallery__btn btn" id="showmore">
 								view more
 							</button>
 						</div>
@@ -885,7 +459,134 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240924112354"></script>
+	<script src="js/app.min.js?_v=20240926094353"></script>
 </body>
 
 </html>
+
+<!-- 
+
+<ul class="portfolio-gallery__list">
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="portfolio-gallery__card"
+                                        >
+                                            <img
+                                                src="img/portfolio/image_04.webp"
+                                                alt="card image"
+                                            />
+                                            <div
+                                                class="portfolio-gallery__info"
+                                            >
+                                                <address>
+                                                    Downtown , Dubai
+                                                </address>
+                                                <h3>Act One Tower</h3>
+                                                <p>207m²</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="portfolio-gallery__card"
+                                        >
+                                            <img
+                                                src="img/portfolio/image_05.webp"
+                                                alt="card image"
+                                            />
+                                            <div
+                                                class="portfolio-gallery__info"
+                                            >
+                                                <address>
+                                                    Jumeirah Golf Estate, Dubai
+                                                </address>
+                                                <h3>Jumeirah Golf Estate</h3>
+                                                <p>304m²</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="portfolio-gallery__card"
+                                        >
+                                            <img
+                                                src="img/portfolio/image_06.webp"
+                                                alt="card image"
+                                            />
+                                            <div
+                                                class="portfolio-gallery__info"
+                                            >
+                                                <address>
+                                                    EMAAR Business Park, Dubai
+                                                </address>
+                                                <h3>ONYX</h3>
+                                                <p>190m²</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="portfolio-gallery__card"
+                                        >
+                                            <img
+                                                src="img/portfolio/image_07.webp"
+                                                alt="card image"
+                                            />
+                                            <div
+                                                class="portfolio-gallery__info"
+                                            >
+                                                <address>
+                                                    Palm Jumeirah, Dubai
+                                                </address>
+                                                <h3>Emerald</h3>
+                                                <p>240m²</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="portfolio-gallery__card"
+                                        >
+                                            <img
+                                                src="img/portfolio/image_08.webp"
+                                                alt="card image"
+                                            />
+                                            <div
+                                                class="portfolio-gallery__info"
+                                            >
+                                                <address>
+                                                    Palm Jumeirah , Dubai
+                                                </address>
+                                                <h3>District 1</h3>
+                                                <p>140m²</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="portfolio-gallery__card"
+                                        >
+                                            <img
+                                                src="img/portfolio/image_09.webp"
+                                                alt="card image"
+                                            />
+                                            <div
+                                                class="portfolio-gallery__info"
+                                            >
+                                                <address>
+                                                    Marina Dubai , Dubai
+                                                </address>
+                                                <h3>Marina Plaza</h3>
+                                                <p>290m²</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+-->
