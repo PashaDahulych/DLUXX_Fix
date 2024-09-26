@@ -26,7 +26,7 @@
 			"title": "Marina Plaza",
 			"image": "img/project-gallery/image_03.jpg",
 			"area": "290m²",
-			"category": "commercial",
+			"category": "villas",
 			"url": "https://google.com",
 			"alt": "background image"
 		},
@@ -36,7 +36,7 @@
 			"title": "Act One Tower",
 			"image": "img/project-gallery/image_04.jpg",
 			"area": "207m²",
-			"category": "commercial",
+			"category": "landscaping",
 			"url": "https://google.com",
 			"alt": "background image"
 		},
@@ -46,7 +46,7 @@
 			"title": "Jumeirah Golf Estate",
 			"image": "img/project-gallery/image_05.jpg",
 			"area": "304m²",
-			"category": "commercial",
+			"category": "concept",
 			"url": "https://google.com",
 			"alt": "background image"
 		},
@@ -56,7 +56,7 @@
 			"title": "ONYX 1",
 			"image": "img/project-gallery/image_06.jpg",
 			"area": "190m²",
-			"category": "commercial",
+			"category": "corporate",
 			"url": "https://google.com",
 			"alt": "background image"
 		},
@@ -112,7 +112,7 @@
 		}
 		,
 		{
-			"id": 8,
+			"id": 12,
 			"address": "Palm Jumeirah , Dubai",
 			"title": "District 1",
 			"image": "img/project-gallery/image_08.jpg",
@@ -122,7 +122,7 @@
 			"alt": "background image"
 		},
 		{
-			"id": 9,
+			"id": 13,
 			"address": "Marina Dubai , Dubai",
 			"title": "Marina Plaza",
 			"image": "img/project-gallery/image_09.jpg",
@@ -132,7 +132,7 @@
 			"alt": "background image"
 		},
 		{
-			"id": 10,
+			"id": 14,
 			"address": "Palm Jumeirah, Dubai",
 			"title": "Anantara South",
 			"image": "img/project-gallery/image_01.jpg",
@@ -142,7 +142,37 @@
 			"alt": "background image"
 		},
 		{
-			"id": 11,
+			"id": 15,
+			"address": "Palm Jumeirah , Dubai",
+			"title": "Shoreline 1",
+			"image": "img/project-gallery/image_02.jpg",
+			"area": "136m²",
+			"category": "commercial",
+			"url": "https://google.com",
+			"alt": "background image"
+		},
+		{
+			"id": 16,
+			"address": "Palm Jumeirah , Dubai",
+			"title": "Shoreline 1",
+			"image": "img/project-gallery/image_02.jpg",
+			"area": "136m²",
+			"category": "commercial",
+			"url": "https://google.com",
+			"alt": "background image"
+		},
+		{
+			"id": 17,
+			"address": "Palm Jumeirah , Dubai",
+			"title": "Shoreline 1",
+			"image": "img/project-gallery/image_02.jpg",
+			"area": "136m²",
+			"category": "commercial",
+			"url": "https://google.com",
+			"alt": "background image"
+		},
+		{
+			"id": 18,
 			"address": "Palm Jumeirah , Dubai",
 			"title": "Shoreline 1",
 			"image": "img/project-gallery/image_02.jpg",
