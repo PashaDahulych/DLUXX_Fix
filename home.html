@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240926133606">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240926230341">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -112,7 +112,7 @@
 					</li>
 					<li class="hero__item">
 						<p>
-							<span data-digits-counter data-digits-counter-speed="2500">20+</span><br />
+							<span data-digits-counter data-digits-counter-speed="2500">40</span><br />
 							completed projects
 						</p>
 					</li>
@@ -254,142 +254,69 @@
 				<h2 class="hidden">Portfolio gallery</h2>
 				<div data-tabs data-tabs-animate="1000" class="portfolio-gallery__tabs">
 					<nav data-tabs-titles class="portfolio-gallery__navigation">
-						<button type="button" class="portfolio-gallery__title" id="residential">
+						<button type="button" class="portfolio-gallery__title" data-f="residential">
 							Residential
 						</button>
-						<button type="button" class="portfolio-gallery__title">
+						<button type="button" class="portfolio-gallery__title" data-f="commercial">
 							Commercial
 						</button>
-						<button type="button" class="portfolio-gallery__title">
+						<button type="button" class="portfolio-gallery__title" data-f="corporate">
 							Corporate
 						</button>
-						<button type="button" class="portfolio-gallery__title">
+						<button type="button" class="portfolio-gallery__title" data-f="villas">
 							villas
 						</button>
-						<button type="button" class="portfolio-gallery__title">
+						<button type="button" class="portfolio-gallery__title" data-f="landscaping">
 							Landscaping
 						</button>
-						<button type="button" class="portfolio-gallery__title">
+						<button type="button" class="portfolio-gallery__title" data-f="concept">
 							CONCEPTS
 						</button>
-						<button type="button" class="portfolio-gallery__title _tab-active">
+						<button type="button" class="portfolio-gallery__title _tab-active" data-f="all">
 							all
 						</button>
 					</nav>
 
 					<div data-tabs-body class="portfolio-gallery__content">
-						<div class="portfolio-gallery__body">
-							<ul class="portfolio-gallery__list"></ul>
-							<button type="button" class="portfolio-gallery__btn btn">
+						<div data-watch class="portfolio-gallery__body">
+							<ul id="residential" class="portfolio-gallery__list"></ul>
+							<button type="button" class="portfolio-gallery__btn btn" id="showmore-residential">
 								view more
 							</button>
 						</div>
 						<div data-watch class="portfolio-gallery__body">
-							<ul class="portfolio-gallery__list">
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_04.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Downtown , Dubai
-											</address>
-											<h3>Act One Tower</h3>
-											<p>207m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_05.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Jumeirah Golf Estate, Dubai
-											</address>
-											<h3>Jumeirah Golf Estate</h3>
-											<p>304m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_06.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												EMAAR Business Park, Dubai
-											</address>
-											<h3>ONYX</h3>
-											<p>190m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_07.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Palm Jumeirah, Dubai
-											</address>
-											<h3>Emerald</h3>
-											<p>240m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_08.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Palm Jumeirah , Dubai
-											</address>
-											<h3>District 1</h3>
-											<p>140m²</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="portfolio-gallery__card">
-										<img src="img/portfolio/image_09.webp" alt="card image" />
-										<div class="portfolio-gallery__info">
-											<address>
-												Marina Dubai , Dubai
-											</address>
-											<h3>Marina Plaza</h3>
-											<p>290m²</p>
-										</div>
-									</a>
-								</li>
-							</ul>
-							<button type="button" class="portfolio-gallery__btn btn">
+							<ul id="commercial" class="portfolio-gallery__list"></ul>
+							<button type="button" class="portfolio-gallery__btn btn" id="showmore-commercial">
 								view more
 							</button>
 						</div>
-						<div class="portfolio-gallery__body">
-							<ul class="portfolio-gallery__list"></ul>
-							<button type="button" class="portfolio-gallery__btn btn">
+						<div data-watch class="portfolio-gallery__body">
+							<ul id="corporate" class="portfolio-gallery__list"></ul>
+							<button type="button" class="portfolio-gallery__btn btn" id="showmore-corporate">
 								view more
 							</button>
 						</div>
-						<div class="portfolio-gallery__body">
-							<ul class="portfolio-gallery__list"></ul>
-							<button type="button" class="portfolio-gallery__btn btn">
+						<div data-watch class="portfolio-gallery__body">
+							<ul id="villas" class="portfolio-gallery__list"></ul>
+							<button type="button" class="portfolio-gallery__btn btn" id="showmore-villas">
 								view more
 							</button>
 						</div>
-						<div class="portfolio-gallery__body">
-							<ul class="portfolio-gallery__list"></ul>
-							<button type="button" class="portfolio-gallery__btn btn">
+						<div data-watch class="portfolio-gallery__body">
+							<ul id="landscaping" class="portfolio-gallery__list"></ul>
+							<button type="button" class="portfolio-gallery__btn btn" id="showmore-landscaping">
 								view more
 							</button>
 						</div>
-						<div class="portfolio-gallery__body">
-							<ul class="portfolio-gallery__list"></ul>
-							<button type="button" class="portfolio-gallery__btn btn">
+						<div data-watch class="portfolio-gallery__body">
+							<ul id="concept" class="portfolio-gallery__list"></ul>
+							<button type="button" class="portfolio-gallery__btn btn" id="showmore-concept">
 								view more
 							</button>
 						</div>
 						<div data-watch class="portfolio-gallery__body">
 							<ul id="all" class="portfolio-gallery__list"></ul>
-							<button type="button" class="portfolio-gallery__btn btn" id="showmore">
+							<button type="button" class="portfolio-gallery__btn btn" id="showmore-all">
 								view more
 							</button>
 						</div>
@@ -532,7 +459,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240926133606"></script>
+	<script src="js/app.min.js?_v=20240926230341"></script>
 </body>
 
 </html>
