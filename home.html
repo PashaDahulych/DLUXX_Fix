@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240926230341">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240927091131">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -435,31 +435,40 @@
 		</footer>
 
 	</div>
-	<div id="form" aria-hidden="true" class="popup" data-lp>
+	<div id="form" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
-				<button data-close type="button" class="popup__close">
-				</button>
+				<button data-close type="button" class="popup__close"></button>
 				<form id="callForm" action="#" method="POST" class="popup__form">
 					<h2>request a call</h2>
 					<div class="popup__line">
 						<label for="fName">Name</label>
-						<input id="fName" autocomplete="off" type="text" name="fNAme" data-error="Error" class="input">
+						<input id="fName" autocomplete="off" type="text" name="fNAme" class="input" />
+						<div class="pupop__wrapp"></div>
 					</div>
 					<div class="popup__line">
 						<label for="email">Email</label>
-						<input id="email" autocomplete="off" type="email" name="email" data-error="Error" class="input">
+						<div class="popup__w-input">
+							<input id="email" autocomplete="off" type="email" name="email" class="input" />
+							<span>Incorrect email</span>
+						</div>
 					</div>
 					<div class="popup__line">
 						<label for="phone">Phone*</label>
-						<input id="phone" autocomplete="off" type="tel" required name="phone" data-error="Error" class="input">
+						<div class="popup__w-input">
+							<input id="phone" autocomplete="off" type="tel" required name="phone" data-error="Error" class="input" />
+							<span>Incorrect phone number</span>
+						</div>
 					</div>
-					<button type="submit" class="popup__btn btn btn--send">send request</button>
+
+					<button type="submit" class="popup__btn btn btn--send">
+						send request
+					</button>
 				</form>
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240926230341"></script>
+	<script src="js/app.min.js?_v=20240927091131"></script>
 </body>
 
 </html>

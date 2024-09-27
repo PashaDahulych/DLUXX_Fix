@@ -871,26 +871,26 @@
             e.preventDefault();
         }));
         emailInp.addEventListener("change", (() => {
-            if (emailInp.value === "") return emailInp.classList.remove("error");
+            if (emailInp.value === "") return emailInp.parentElement.classList.remove("error");
             if (!emailInp.value.match(emailPattern)) {
-                emailInp.classList.remove("ok");
-                return emailInp.classList.add("error");
+                emailInp.parentElement.classList.remove("ok");
+                return emailInp.parentElement.classList.add("error");
             }
             if (emailInp.value.match(emailPattern)) {
-                emailInp.classList.remove("error");
-                return emailInp.classList.add("ok");
+                emailInp.parentElement.classList.remove("error");
+                return emailInp.parentElement.classList.add("ok");
             }
         }));
         phoneInp.addEventListener("change", (() => {
             const phoneValue = phoneInp.value;
-            if (phoneValue === "") return phoneInp.classList.remove("error");
+            if (phoneValue === "") return phoneInp.parentElement.classList.remove("error");
             if (!phoneValue.match(phoneNumberPattern)) {
-                phoneInp.classList.remove("ok");
-                return phoneInp.classList.add("error");
+                phoneInp.parentElement.classList.remove("ok");
+                return phoneInp.parentElement.classList.add("error");
             }
             if (phoneValue.match(phoneNumberPattern)) {
-                phoneInp.classList.remove("error");
-                return phoneInp.classList.add("ok");
+                phoneInp.parentElement.classList.remove("error");
+                return phoneInp.parentElement.classList.add("ok");
             }
         }));
     }
