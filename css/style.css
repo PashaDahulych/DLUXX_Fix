@@ -429,7 +429,8 @@ body::after {
   font-size: .875rem;
   line-height: 1.42;
   letter-spacing: var(--letter-spacing);
-  text-transform: uppercase
+  text-transform: uppercase;
+  transition: opacity .3s ease 0s
 }
 .portfolio-gallery__title._tab-active {
   font-weight: 700
@@ -687,7 +688,7 @@ body::after {
 }
 .hero {
   position: relative;
-  min-height: 100dvh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   transition: padding .3s linear
@@ -1013,358 +1014,351 @@ body::after {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 0s;
+  transition-delay: 0s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(2) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease .2s;
+  transition-delay: .2s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(3) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease .4s;
+  transition-delay: .4s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(4) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease .6s;
+  transition-delay: .6s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(5) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease .8s;
+  transition-delay: .8s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(6) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 1s;
+  transition-delay: 1s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(7) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 1.2s;
+  transition-delay: 1.2s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(8) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 1.4s;
+  transition-delay: 1.4s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(9) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 1.6s;
+  transition-delay: 1.6s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(10) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 1.8s;
+  transition-delay: 1.8s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(11) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 2s;
+  transition-delay: 2s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(12) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 2.2s;
+  transition-delay: 2.2s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(13) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 2.4s;
+  transition-delay: 2.4s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(14) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 2.6s;
+  transition-delay: 2.6s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(15) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 2.8s;
+  transition-delay: 2.8s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(16) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 3s;
+  transition-delay: 3s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(17) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 3.2s;
+  transition-delay: 3.2s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(18) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 3.4s;
+  transition-delay: 3.4s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(19) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 3.6s;
+  transition-delay: 3.6s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(20) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 3.8s;
+  transition-delay: 3.8s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(21) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 4s;
+  transition-delay: 4s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(22) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 4.2s;
+  transition-delay: 4.2s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(23) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 4.4s;
+  transition-delay: 4.4s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(24) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 4.6s;
+  transition-delay: 4.6s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(25) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 4.8s;
+  transition-delay: 4.8s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(26) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 5s;
+  transition-delay: 5s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(27) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 5.2s;
+  transition-delay: 5.2s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(28) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 5.4s;
+  transition-delay: 5.4s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(29) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 5.6s;
+  transition-delay: 5.6s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(30) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 5.8s;
+  transition-delay: 5.8s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(31) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 6s;
+  transition-delay: 6s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(32) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 6.2s;
+  transition-delay: 6.2s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(33) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 6.4s;
+  transition-delay: 6.4s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(34) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 6.6s;
+  transition-delay: 6.6s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(35) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 6.8s;
+  transition-delay: 6.8s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(36) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 7s;
+  transition-delay: 7s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(37) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 7.2s;
+  transition-delay: 7.2s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(38) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 7.4s;
+  transition-delay: 7.4s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(39) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 7.6s;
+  transition-delay: 7.6s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(40) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 7.8s;
+  transition-delay: 7.8s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(41) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 8s;
+  transition-delay: 8s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(42) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 8.2s;
+  transition-delay: 8.2s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(43) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 8.4s;
+  transition-delay: 8.4s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(44) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 8.6s;
+  transition-delay: 8.6s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(45) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 8.8s;
+  transition-delay: 8.8s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(46) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 9s;
+  transition-delay: 9s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(47) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 9.2s;
+  transition-delay: 9.2s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(48) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 9.4s;
+  transition-delay: 9.4s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(49) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 9.6s;
+  transition-delay: 9.6s;
   will-change: transform
 }
 ._watcher-view .portfolio-gallery__list li:nth-child(50) {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: all .3s ease 9.8s;
+  transition-delay: 9.8s;
   will-change: transform
-}
-.portfolio-gallery__list li.animate-card {
-  border: 2px solid red;
-  transition: all .3s ease;
-  opacity: 1;
-  -webkit-transform: translateY(0);
-  transform: translateY(0)
 }
 .portfolio-gallery__card {
   display: block;
@@ -1524,7 +1518,7 @@ body::after {
   line-height: 1.37
 }
 .get-in h2:not(:last-child) {
-  margin-bottom: 17px
+  margin-bottom: 1.0625rem
 }
 .get-in p {
   color: var(--whiteColor);
@@ -3066,6 +3060,9 @@ body::after {
   .popup__close:hover::after,
   .popup__close:hover::before {
     background-color: var(--whiteColor)
+  }
+  .portfolio-gallery__title:not(._tab-active):hover {
+    opacity: .5
   }
   .footer__tel ul li a:hover::after {
     width: 100%;
