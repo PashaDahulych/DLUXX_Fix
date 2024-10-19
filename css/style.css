@@ -283,7 +283,7 @@ body::after {
   bottom: 0;
   right: 0;
   padding: 30px 10px;
-  transition: visibility .8s ease 0s;
+  transition: visibility .5s ease 0s;
   visibility: hidden;
   pointer-events: none
 }
@@ -494,13 +494,12 @@ body::after {
   clip: rect(0 0 0 0)
 }
 .header {
-  transition: padding .3s ease,background-color .3s ease;
+  transition: padding-block .3s ease,background-color .3s ease;
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 55;
-  justify-content: space-between
+  z-index: 55
 }
 .menu-open .header--white .header__logo path {
   fill: var(--whiteBrColor)
@@ -526,7 +525,7 @@ body::after {
 }
 .header._header-scroll {
   background-color: rgba(9,11,26,.8);
-  padding-block: 10px
+  padding-block: .625rem
 }
 .header__cnt {
   display: flex;
@@ -1872,7 +1871,8 @@ body::after {
     flex-grow: 1
   }
   .header {
-    padding-block: 17.5px
+    padding-top: 17.5px;
+    padding-bottom: 17.5px
   }
   .hero {
     padding-top: 5.625rem
@@ -2364,7 +2364,8 @@ body::after {
     padding: 3rem 20px 2rem 20px
   }
   .header {
-    padding-block: 15px
+    padding-top: 15px;
+    padding-bottom: 15px
   }
   .header--white .menu__list,
   .header--white .menu__number {
@@ -2550,6 +2551,21 @@ body::after {
 @media (max-width:424px) {
   .menu__mob-link {
     font-size: .625rem
+  }
+}
+@media (max-width:375px) {
+  .footer__body {
+    grid-template-columns: 1fr
+  }
+  .footer__about {
+    grid-column: 1/2
+  }
+  .footer__address {
+    max-width: 220px
+  }
+  .footer__social {
+    grid-column: 1/2;
+    flex-direction: column
   }
 }
 @media (max-width:87.5em) {
